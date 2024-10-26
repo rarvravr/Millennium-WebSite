@@ -1,0 +1,81 @@
+* {
+    font-family: "Press Start 2P", system-ui;
+    color: #4b4d5a;
+    font-size: 16px;
+    text-align: center;
+}
+
+html {
+    background-color: #111112;;
+}
+
+button {
+    background-color: #212127;
+    border: 0;
+    .button_pic {
+        filter: saturate(0%);
+    }
+}
+
+button:hover {
+    background-color: #363640;
+    .button_pic {
+        filter: saturate(100%);
+    }
+}
+
+button:active {
+    .button_pic {
+        filter: brightness(70%);
+    }
+    background-color: #1e1e23;
+}
+
+.button_pic {
+    height: 30px;
+}
+
+.search_menu {
+    background-color: #141417;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.account_pic {
+    height: 40px;
+}
+
+.account_button {
+    border-radius: 40px;
+    aspect-ratio: 1;
+    position: absolute;
+    right: 0px;
+    top: 4px;
+    margin: 2
+}
+
+.search_button {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    position: relative;
+    top: 13px;
+    right: 13px;
+}
+
+
+.search_case {
+    position: relative;
+    top: 6px;
+    color: #cea356;
+    background-color: #212127;
+    border: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    height: 30px;
+    width: 500px;
+}
