@@ -12,30 +12,31 @@ html {
 button {
     background-color: #212127;
     border: 0;
-    .button_pic {
+    .button__pic {
         filter: saturate(0%);
     }
+    cursor: pointer;
 }
 
 button:hover {
     background-color: #363640;
-    .button_pic {
+    .button__pic {
         filter: saturate(100%);
     }
 }
 
 button:active {
-    .button_pic {
+    .button__pic {
         filter: brightness(70%);
     }
     background-color: #1e1e23;
 }
 
-.button_pic {
+.button__pic {
     height: 30px;
 }
 
-.search_menu {
+.header {
     background-color: #141417;
     height: 60px;
     position: fixed;
@@ -44,20 +45,20 @@ button:active {
     right: 0px;
 }
 
-.account_pic {
-    height: 40px;
+.account-pic {
+    height: 40 px;
 }
 
-.account_button {
+.account-button {
     border-radius: 40px;
     aspect-ratio: 1;
     position: absolute;
-    right: 0px;
-    top: 4px;
+    right: 4px;
+    top: 9px;
     margin: 2
 }
 
-.search_button {
+.search-case__button {
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     position: relative;
@@ -66,7 +67,8 @@ button:active {
 }
 
 
-.search_case {
+.header__search-case {
+    font-size: 16px;
     position: relative;
     top: 6px;
     color: #cea356;
@@ -77,5 +79,6 @@ button:active {
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
     height: 30px;
-    width: 500px;
+    width: 40%;
+    text-overflow: ellipsis;
 }
