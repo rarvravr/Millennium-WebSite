@@ -3,6 +3,11 @@
     color: #4b4d5a;
     font-size: 16px;
     text-align: center;
+    user-select: text;
+}
+
+::selection {
+    background-color: #cea4562a;
 }
 
 html {
@@ -43,6 +48,7 @@ button:active {
     top: 0px;
     left: 0px;
     right: 0px;
+    z-index: 1;
 }
 
 .account-pic {
@@ -63,12 +69,10 @@ button:active {
     border-bottom-right-radius: 7px;
     position: relative;
     top: 13px;
-    right: 13px;
 }
 
 
 .header__search-case {
-    font-size: 16px;
     position: relative;
     top: 6px;
     color: #cea356;
@@ -81,4 +85,14 @@ button:active {
     height: 30px;
     width: 40%;
     text-overflow: ellipsis;
+    z-index: 1;
+}
+
+.logo {
+    position: relative;
+    left: 0;
+    right: 0;
+    padding-top: 75px;
+    padding-bottom: 15px;
+    width: 500px;
 }
