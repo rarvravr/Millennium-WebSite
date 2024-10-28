@@ -11,28 +11,39 @@
 }
 
 html {
-    background-color: #111112;;
+    /* ? Некорректное отображение размера*/
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+body {
+    background-color: #111112;
+    /* ? Некорректное отображение размера*/
+    min-height: 100vh;
+    min-width: 100vh;
 }
 
 button {
     background-color: #212127;
     border: 0;
     .button__pic {
-        filter: saturate(0%);
+        filter: saturate(0%) brightness(70%);
     }
     cursor: pointer;
 }
 
 button:hover {
     background-color: #363640;
+    color: #cea356;
     .button__pic {
         filter: saturate(100%);
     }
 }
 
 button:active {
+    color: #aa8746;
     .button__pic {
-        filter: brightness(70%);
+        filter: brightness(60%);
     }
     background-color: #1e1e23;
 }
@@ -90,11 +101,28 @@ button:active {
 
 .logo {
     position: relative;
-    left: 0;
-    right: 0;
     padding-top: 75px;
     padding-bottom: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 100px;
+    height: 75px;
+}
+
+.logo-text {
+    margin-bottom: 30px;
+}
+
+.select-menu {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 8px;
+    border-radius: 7px;
+    color:#4b4d5a;
+    font-size: 24px;
+}
+
+/* ! Найти способ прилипания к краям кнопки */
+.select-menu__pic {
+    height: 60%;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
