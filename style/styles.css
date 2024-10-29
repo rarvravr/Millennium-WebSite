@@ -103,7 +103,7 @@ button:active {
     position: relative;
     padding-top: 75px;
     padding-bottom: 15px;
-    width: 600px;
+    width: 400px;
 }
 
 .logo-text {
@@ -125,4 +125,10 @@ button:active {
     margin-left: 10px;
     margin-right: 10px;
 
+}
+
+.select {
+    position: relative;
+    width: 70%;
+    margin: auto;
 }
